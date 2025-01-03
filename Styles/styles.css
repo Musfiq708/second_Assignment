@@ -1,0 +1,153 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Inter;
+}
+
+/* header part starts */
+.header {
+    background: linear-gradient(180deg, #111111, #000000d5 100%);
+
+}
+
+.hamburger {
+    width: 24px;
+    height: 24px;
+}
+
+.header-nav {
+    display: flex;
+    padding-top: 59px;
+    align-items: center;
+    justify-content: space-between;
+    text-align: center;
+    margin: 0px 190px 0px 190px;
+}
+
+.nav-options {
+    display: flex;
+    align-items: center;
+
+}
+
+.nav-options-container {
+    display: flex;
+    gap: 47px;
+    list-style: none;
+    padding: 4px;
+    align-items: center;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 39px;
+
+}
+
+.nav-title {
+    font-size: 36px;
+    font-weight: 800;
+    color: #E6533C;
+    font-style: italic;
+}
+
+.normal-list-button {
+    border-radius: 46px;
+    background: #E6533C;
+    padding: 8px 20px;
+    border: none;
+    font-size: 18px;
+    font-weight: 600;
+    color: #FFFFFF;
+}
+
+.about-list {
+    margin-right: 20px;
+}
+
+.hamburger {
+    display: none;
+}
+
+.normal-list {
+    color: #FFFFFF;
+    font-size: 18px;
+    font-weight: 400;
+}
+
+.model_section {
+    /*this section need to adjust */
+    display: flex;
+    align-items: center;
+    margin-left: 190px;
+}
+
+.shape-title {
+    font-size: 78px;
+    text-align: left;
+    font-weight: 900;
+    color: white;
+    width: 520px;
+}
+.span-shape {
+    font-family: 'Miama', sans-serif;
+    font-size: 150px;
+    font-weight: 400;
+}
+.title-text-description {
+    color: rgba(255, 255, 255, 0.5);
+    font-family: Inter;
+    font-size: 16px;
+    font-weight: 400;
+    letter-spacing: 0.5px;
+    text-align: left;
+    margin-top:28px ;
+    margin-bottom: 28px;
+    max-width: 520px;
+}
+.two-button{
+    display: flex;
+    gap: 14px;
+}
+.join_Button {
+    border-radius: 42px;
+    background-color: #E6533C;
+    padding: 16px 40px 16px 40px;
+    color: #FFFFFF;
+    border: none;
+    font-size: 18px;
+    font-weight: 600;
+    max-width: 224px;
+    max-height: 54px;
+}
+.download_Button {
+    background-color: black;
+    border: 1px solid white;
+    padding: 16px 40px 16px 40px;
+    border-radius: 42px;
+    color: #FFFFFF;
+    font-size: 18px;
+    font-weight: 600;
+    max-width: 224px;
+    max-height: 54px;
+}
+@media screen and (max-width: 576px) {
+    .nav-options-container {
+        display: none;
+    }
+
+    .hamburger {
+        display: block;
+    }
+
+    .header-nav {
+        display: flex;
+        padding-top: 52px;
+        align-items: center;
+        margin: 0px 20px 0px 20px;
+    }
+    .model_section{
+        flex-direction: column;
+    }
+}
