@@ -10,7 +10,7 @@ body {
 
 /* header part starts */
 .header {
-    background: linear-gradient(180deg, #111111, #000000d5 100%);
+    background: linear-gradient(180deg, #111111dc, #000000 100%);
 
 }
 
@@ -80,6 +80,7 @@ body {
     /*this section need to adjust */
     display: flex;
     align-items: center;
+    gap: 200px;
     margin-left: 190px;
 }
 
@@ -138,6 +139,96 @@ body {
     max-height: 54px;
 }
 
+.model_container {
+    position: relative;
+    display: inline-block;
+}
+
+.model_image {
+    width: auto;
+    display: block;
+
+}
+
+.free_video {
+    position: absolute;
+    top: 20%;
+    left: 65%;
+    z-index: 10;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 12px;
+    backdrop-filter: blur(20px);
+    background: rgba(255, 255, 255, 0.1);
+    padding: 17px 24px 17px 24px;
+    width: 193px;
+}
+
+.free_video_number {
+    font-size: 40px;
+    font-weight: 900;
+    text-align: left;
+    color: white;
+}
+
+.free_video_text {
+    font-size: 13px;
+    font-weight: 400;
+    color: rgba(255, 255, 255, 0.65);
+}
+
+.vid_tutorial {
+    position: absolute;
+    top: 75%;
+    right: 60%;
+    display: flex;
+    gap: 12px;
+    padding: 20px 23px 20px 23px;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 12px;
+    backdrop-filter: blur(20px);
+    background: rgba(48, 48, 48, 0.54);
+    width: 206px;
+}
+
+.vid_tutorial_cicle {
+    width: 40px;
+    height: 40px;
+    background: rgb(230, 83, 60);
+    border-radius: 50%;
+}
+
+.vid_tutorial_text_container_heading {
+    color: white;
+    font-size: 24px;
+    font-weight: 900;
+}
+
+.vid_tutorial_text_container_description {
+    font-size: 16px;
+    font-weight: 400;
+    color: rgba(239, 237, 232, 0.65);
+}
+
+.habit_section {
+    background-color: black;
+    padding-top: 100px;
+    text-align: center;
+}
+
+.habit_title {
+    font-weight: 900;
+    font-size: 48px;
+    color: white;
+    text-align: center;
+}
+
+.habit_paragraph {
+    font-weight: 400;
+    font-size: 14px;
+    color: rgba(255, 255, 255, 0.5);
+    margin-top: 14px;
+    
+}
 
 @media screen and (max-width: 576px) {
     .nav-options-container {
@@ -162,6 +253,7 @@ body {
     .model_section {
 
         margin-left: 20px;
+        gap: 0px;
     }
 
     .shape-title {
@@ -174,18 +266,74 @@ body {
         font-weight: 400px;
         font-size: 36px;
     }
-    .title-text-description{
+
+    .title-text-description {
         max-width: 274px;
     }
-    .club{
+
+    .club {
         display: none;
     }
-    .join_Button{
+
+    .join_Button {
         max-width: 169px;
         max-height: 54px;
     }
-    .download_Button{
+
+    .download_Button {
         max-width: auto;
         max-height: 54px;
+    }
+
+    .free_video {
+        padding: 13px 17px 11px 18px;
+        width: 140px;
+        top: 15%;
+        left: 60%;
+    }
+
+    .free_video_number {
+        font-size: 30px;
+        font-weight: 900;
+    }
+
+    .free_video_text {
+        font-size: 10px;
+        font-weight: 400;
+    }
+
+    .model_container {
+        margin-top: 47px;
+    }
+
+    .vid_tutorial {
+        top: 45%;
+        right: 60%;
+        display: flex;
+        gap: 9px;
+        padding: 15px 17px 15px 17px;
+        width: 156px;
+    }
+
+    .vid_tutorial_cicle {
+        width: 30px;
+        height: 30px;
+        background: rgb(230, 83, 60);
+        border-radius: 50%;
+    }
+
+    .vid_tutorial_text_container_heading {
+        color: white;
+        font-size: 18px;
+    }
+
+    .vid_tutorial_text_container_description {
+        font-size: 12px;
+        color: rgba(239, 237, 232, 0.65);
+    }
+
+    .habit_section {
+
+        margin-top: 0px;
     }
 }
