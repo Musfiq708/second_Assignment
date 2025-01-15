@@ -392,7 +392,113 @@ body {
     font-weight: 400;
 }
 
+.team_section {
+    margin-top: 58px;
+    border-radius: 18px;
+    padding: 20px;
+    background: rgba(255, 255, 255, 0.1);
+    margin-right: 190px;
+    margin-left: 190px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    margin-bottom: 88px;
+}
 
+.team_card {
+    position: relative;
+    border-radius: 18px;
+    width: 327px;
+    height: auto;
+    overflow: hidden;
+}
+
+.card_image {
+    width: 100%;
+    height: 100%;
+    border-radius: 18px;
+}
+
+.team_class_head {
+    color: white;
+    font-size: 18px;
+    font-weight: 800;
+}
+
+.team_class_head_role {
+    margin-top: 5px;
+    font-size: bold;
+}
+
+.team_card_text {
+    position: absolute;
+    bottom: -30px;
+    left: 25px;
+    display: none;
+}
+
+footer {
+    padding: 66px 0px 35px 0px;
+    background: rgba(255, 255, 255, 0.1);
+}
+
+.get_start {
+    color: white;
+    font-size: 32px;
+    font-weight: 700;
+    margin-bottom: 39px;
+}
+
+.get_start_details {
+    font-weight: 400px;
+    font-size: 23px;
+    color: rgba(255, 255, 255, 0.5);
+}
+
+.get-star-container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    margin-bottom: 20px;
+}
+
+.get_started_container {
+    display: flex;
+    gap: 152px;
+}
+.footer_fitness{
+    font-weight: 800;
+    font-size: 70px;
+    color: #E6533C;
+    font-style: italic;
+}
+.footer_fitness_details{
+   font-weight: 400;
+   font-size: 14px;
+   color: rgba(255, 255, 255, 0.5);
+   width: 443px;
+   margin-top: 20px;
+}
+.footer_container{
+    display: flex;
+    justify-content: space-between;
+    margin-left: 190px;
+    margin-right: 190px;
+}
+.horijntal_line{
+    margin-left: 190px;
+    margin-right: 190px;
+    border: 2px solid rgba(255, 255, 255, 0.1);
+    height: 0px;
+    margin-top: 80px;
+    margin-bottom: 36px;
+}
+.footer_ending{
+    font-weight: 400;
+    font-size: 20px;
+    text-align: center;
+    color: rgba(255, 255, 255, 0.5);
+}
 @media screen and (max-width: 576px) {
     .nav-options-container {
         display: none;
@@ -564,12 +670,14 @@ body {
         margin-top: 65px;
         margin-bottom: 88px;
     }
+
     .bmi_calculator {
         padding-left: 19px;
         padding-right: 19px;
         flex-direction: column;
-        gap:30px ;
+        gap: 30px;
     }
+
     .info_box {
         width: 180px;
         padding: 12px 0px 12px 20px;
@@ -578,7 +686,44 @@ body {
         border-radius: 8px;
         font-size: 16px;
         font-weight: 400;
-        
+
     }
 
+    .team_section {
+        margin-top: 58px;
+        border-radius: 18px;
+        padding: 20px;
+        background: rgba(255, 255, 255, 0.1);
+        margin-right: 19px;
+        margin-left: 19px;
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        gap: 20px;
+    }
+    .footer_container{
+        flex-direction: column;
+        margin-left: 19px;
+        margin-right: 19px;
+    }
+    .get_started_container {
+        flex-direction: column;
+        gap: 152px;
+    }
+    .footer {
+        padding: 66px 19px 35px 19px;
+    }
+    .footer_fitness_details{
+        width: 317px;
+        margin-top: 20px;
+        margin-bottom: 30px;
+     }
+     .get_started_container {
+        gap: 20px;
+    }
+    .horijntal_line{
+        margin-left: 19px;
+        margin-right: 19px;
+        margin-top: 72px;
+        margin-bottom: 41px;
+    }
 }
